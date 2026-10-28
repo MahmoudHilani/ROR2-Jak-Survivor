@@ -40,6 +40,7 @@ namespace JakSurvivor
             public const string BoardOn = "BoardOn";
             public const string BoardOff = "BoardOff";
             public const string FireBlaster = "FireBlaster";
+            public const string BlasterHold = "BlasterHold";
             public const string FireScatter = "FireScatter";
             public const string ArcStart = "ArcStart";
             public const string ArcLoop = "ArcLoop";
@@ -75,6 +76,8 @@ namespace JakSurvivor
         public static readonly string[] ControllerLayers = { Layers.Body, Layers.FullBody, Layers.Transformation, Layers.Gesture, Layers.AimPitch, Layers.AimYaw, Layers.BodyAction, Layers.Gun, Layers.Board };
         public static readonly string[] PoseLayers = { Layers.BodyAction, Layers.Gesture, Layers.Transformation, Layers.FullBody, Layers.Body };
         public const float JumpAirTime = 20f / 60f, BoardAirTime = 15f / 60f;
+        // Longer than the gap between held shots, short enough that a released trigger lowers the gun promptly.
+        public const float BlasterHoldTime = 0.1f;
 
         public static class Spin
         {

@@ -82,6 +82,9 @@ namespace JakSurvivor
             body.portraitIcon = Icons.Portrait.texture;
             body.bodyColor = new Color(0.24f, 0.65f, 0.84f);
             body.preferredInitialStateType = new SerializableEntityStateType(typeof(JakMain));
+            // Commando's origin is at Jak's neck, 1.1 m under the camera pivot, so shots the camera sees
+            // over a rise struck the ground. Eye height matches Bandit's and Artificer's offsets.
+            body.aimOriginTransform.localPosition = new Vector3(0f, 0.75f, 0f);
 
             JakItemDisplays.Load();
             JakModel.Install(BodyPrefab, JakAssets.Get<GameObject>(JakAnimator.ModelPrefab), JakItemDisplays.RuleSet);

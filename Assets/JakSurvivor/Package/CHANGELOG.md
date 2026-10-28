@@ -2,6 +2,8 @@
 
 - Daxter now rides on Jak's shoulder and joins him on the Jet-Board.
 - Jak's sounds now play through the game's audio engine and follow its volume settings.
+- Blaster keeps Jak's gun raised while you hold fire, and shots start at eye height so they hit the ground less.
+- Removed leftover build files from the download.
 
 # 0.1.1
 
