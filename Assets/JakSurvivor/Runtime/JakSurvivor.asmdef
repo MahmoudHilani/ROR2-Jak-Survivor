@@ -1,0 +1,52 @@
+{
+    "name": "JakSurvivor",
+    "rootNamespace": "JakSurvivor",
+    "references": [
+        "com.unity.multiplayer-hlapi.Runtime",
+        "Unity.TextMeshPro"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "RoR2.dll",
+        "AK.Wwise.Unity.API.dll",
+        "HGUnityUtils.dll",
+        "HGCSharpUtils.dll",
+        "Unity.Addressables.dll",
+        "Unity.ResourceManager.dll",
+        "Unity.Collections.dll",
+        "KinematicCharacterController.dll",
+        "LegacyResourcesAPI.dll",
+        "BepInEx.dll",
+        "R2API.Core.dll",
+        "R2API.Prefab.dll",
+        "R2API.Language.dll",
+        "R2API.RecalculateStats.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "JAK_GAME_PACKAGE",
+        "JAK_R2API_PACKAGE",
+        "JAK_HLAPI_PACKAGE"
+    ],
+    "versionDefines": [
+        {
+            "name": "riskofrain2",
+            "expression": "",
+            "define": "JAK_GAME_PACKAGE"
+        },
+        {
+            "name": "riskofthunder-r2api_recalculatestats",
+            "expression": "",
+            "define": "JAK_R2API_PACKAGE"
+        },
+        {
+            "name": "com.unity.multiplayer-hlapi",
+            "expression": "",
+            "define": "JAK_HLAPI_PACKAGE"
+        }
+    ],
+    "noEngineReferences": false
+}
